@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    @include font-lato;
+    font-weight: 400;
+}
+
+.section-outer {
+
+}
+
+.section-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}

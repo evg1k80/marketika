@@ -1,0 +1,124 @@
+@import 'libs';
+@import 'vars';
+@import 'global';
+
+// === header ===
+.section-header {
+    position: relative;
+    color: $color-white;
+    background-image: url(../images/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(20, 39, 41, .5);
+    }
+    .section-inner {
+        height: 100vh;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-logo {
+        flex-shrink: 1;
+        padding-top: 35px;
+        a {
+            color: $color-white;
+            font-weight: 700;
+            font-size: 24px;
+        }  
+    }
+    &-content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    &-wrapper {
+        margin: 0 auto;
+        max-width: 1021px;
+        width: 100%;
+        &__title {
+            font-size: 55px;
+            font-weight: 700;
+            line-height: 60px;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            margin:0 auto 43px;
+            width: 60%;
+        }
+        &__form {
+            display: flex;
+            &-input {
+                flex: 1;
+                margin-right: 40px;
+                input {
+                    border: none;
+                    border-radius: 4px;
+                    background-color: rgba(255, 255, 255, .25);
+                    color: $color-white;
+                    padding: 17px 20px;
+                    width: 100%;
+                    outline: none;
+                    &::placeholder {
+                        color: $color-white;
+                        font-size: 16px;
+                        @include font-lato;
+                    }  
+                }
+            }
+            &-button {
+                button {
+                    border: none;
+                    color: $color-white;
+                    font-size: 18px;
+                    background: linear-gradient(90deg, #FE985B 2.77%, #FE4FA7 100%);
+                    border-radius: 4px;
+                    padding: 16px 49px 15px 42px;
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+// === / header ===
+
+// === promo ===
+.section-promo {}
+
+// === / promo ===
+
+// === founder ===
+.section-founder {}
+
+// === / founder ===
+
+// === plans ===
+.section-plans {}
+
+// === / plans ===
+
+// === free ===
+.section-free {}
+
+// === / free ===
+
+// === footer ===
+.section-footer {}
+
+// === / footer ===

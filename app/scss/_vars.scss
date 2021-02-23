@@ -2,6 +2,24 @@
     font-family: 'Lato', sans-serif;
 }
 
+@mixin btn-active {
+    color: $color-white;
+    border: none;
+    background: linear-gradient(90deg, #FE985B 2.77%, #FE4FA7 100%);
+}
+
+@mixin btn {
+    color: $color-title;
+    border: 1px solid #979797;
+    background: #fff;
+}
+
+@mixin btn-free {
+    color: $color-title;
+    border: none;
+    background: #fff;
+}
+
 $color-white: #fff;
 $color-title: #414141;
 $color-text: #6c6c6c;

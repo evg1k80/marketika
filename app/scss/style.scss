@@ -99,7 +99,78 @@
 // === / header ===
 
 // === promo ===
-.section-promo {}
+.section-promo {
+    padding-top: 117px;
+    padding-bottom: 132px;
+}
+
+.section-promo-1 {
+    display: flex;
+    margin-bottom: 116px;
+
+    &__content,
+    &__video {
+        flex-basis: 50%;
+    }
+
+    &__content {
+        padding-right: 95px;
+        .title {
+            font-size: 34px;
+            line-height: 50px;
+            font-weight: 700;
+            color: $color-title;
+            margin-bottom: 55px;
+        }
+        .subtitle {
+            font-size: 18px;
+            font-weight: 700;
+            color: $color-title;
+            margin-bottom: 14px;
+        }
+        .text {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: $color-text;
+            margin-bottom: 29px;
+        }
+    }
+    &__video {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.section-promo-2 {
+    position: relative;
+    display: flex;
+    padding-top: 86px;
+    border-top: 1px solid #e2e2e2;
+    &__item {
+        text-align: center;
+        & + & {
+            margin-left: 37px;
+        }
+        .icon {
+            margin-bottom: 20px;
+        }
+        .title {
+            margin-bottom: 14px;
+            font-size: 18px;
+            color: $color-title;
+            font-weight: 700;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: $color-text;
+        }
+    }  
+}
 
 // === / promo ===
 
